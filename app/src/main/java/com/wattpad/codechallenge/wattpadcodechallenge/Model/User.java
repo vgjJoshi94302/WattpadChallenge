@@ -1,5 +1,7 @@
-
-package com.wattpad.codechallenge.wattpadcodechallenge;
+/*
+Model class for User
+ */
+package com.wattpad.codechallenge.wattpadcodechallenge.Model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

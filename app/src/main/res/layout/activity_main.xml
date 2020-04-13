@@ -10,12 +10,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/tv_no_internet"
-        android:text="No Internet Found"
+        android:text="Network State"
         android:gravity="center"
         android:visibility="visible"/>
 
     <SearchView
-        android:id="@+id/search"
+        android:id="@+id/sv_stories"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -25,11 +25,11 @@
         android:layout_gravity="center"
         android:indeterminate="true"
         android:layout_centerInParent="true"
-        android:id="@+id/progress"/>
+        android:id="@+id/progressBar"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:layout_below="@id/search"
+        android:layout_below="@id/sv_stories"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

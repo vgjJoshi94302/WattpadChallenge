@@ -1,8 +1,11 @@
 
-package com.wattpad.codechallenge.wattpadcodechallenge;
+/*
+Model class for stories list
+
+ */
+package com.wattpad.codechallenge.wattpadcodechallenge.Model;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

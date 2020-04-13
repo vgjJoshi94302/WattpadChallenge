@@ -1,43 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:focusable="true"
-    >
+    android:focusable="true">
 
     <ImageView
-        android:id="@+id/cover"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:id="@+id/iv_cover"
+        android:layout_width="@dimen/imageview_width"
+        android:layout_height="@dimen/imageview_height"
         android:layout_alignParentTop="true"
-       />
+        android:src="@drawable/ic_launcher_background"/>
 
     <TextView
-        android:id="@+id/title"
-        android:layout_toRightOf="@id/cover"
+        android:id="@+id/tv_title"
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
+        android:layout_height="@dimen/textview_height"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/textview_marginstart"
+        android:layout_toEndOf="@id/iv_cover"
+        android:singleLine="true"
         android:textColor="@color/colorPrimary"
-
-        android:layout_marginLeft="10dp"
-        android:layout_alignParentTop="true"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:singleLine="true"
-        />
+        android:textSize="@dimen/textview_textsize"
+        android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/author"
-        android:layout_toRightOf="@id/cover"
+        android:id="@+id/tv_author"
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_marginLeft="10dp"
-        android:textColor="@color/colorAccent"
+        android:layout_height="@dimen/textview_height"
+        android:layout_below="@id/tv_title"
+        android:layout_marginStart="@dimen/textview_marginstart"
+        android:layout_toEndOf="@id/iv_cover"
         android:singleLine="true"
-        android:textSize="20dp"
-        android:layout_below="@id/title" />
-
-
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/textview_textsize" />
 
 
 </RelativeLayout>

@@ -1,5 +1,8 @@
+/*
+Model class for story data
 
-package com.wattpad.codechallenge.wattpadcodechallenge;
+ */
+package com.wattpad.codechallenge.wattpadcodechallenge.Model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
